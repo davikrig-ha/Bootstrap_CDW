@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <style>
+
+     .marcador {
+         background: #fe9d9d;
+         border: 1px solid #f94646;
+         height: 120px;
+     }    
+
+     .marcador-container {
+         background: #5bf946;
+         border: 1px solid #36ae26;
+     }
+
+     .borda {
+         border: 1px solid blue;
+     }
+
+    </style>
+
+     <title>Gird</title>
+
+  </head>
+
+  <body style="margin-bottom: 200px;padding: 16px;">
+
+    <div class="container">
+
+        <h2>Alinhamento vertical (align-items-ALINHAMENTO: start, center, end)</h2>
+        <div class="marcador row align-items-end">
+          <div class="col borda">Área 1</div>
+          <div class="col borda">Área 2</div>
+          <div class="col borda">Área 3</div>
+        </div>
+  
+        <h2>Alinhamento horizontal individual (align-self-ALINHAMENTO: start, center, end)</h2>
+        <div class="marcador row">
+          <div class="col borda align-self-start">Área 1</div>
+          <div class="col borda align-self-start">Área 2</div>
+          <div class="col borda align-self-start">Área 3</div>
+        </div>
+  
+        <h2>Alinhamento horizontal colunas (justify-content-ALINHAMENTO: start, center, end)</h2>
+        <div class="row justify-content-end">
+            <div class="marcador col-2">Área 1</div>
+            <div class="marcador col-2">Área 2</div>
+            <div class="marcador col-2">Área 3</div>
+          </div>
+  
+        <h2>Distribuição (justify-content-ALINHAMENTO: around, between, end)</h2>
+      
+        <div class="row borda justify-content-around">
+            <div class="marcador col-2">Área 1</div>
+            <div class="marcador col-2">Área 2</div>
+            <div class="marcador col-2">Área 3</div>
+          </div>
+  
+        <h2>Removendo espaçamento</h2>
+        <div class="row no-gutters">
+          <div class="borda col-2">Área 1</div>
+          <div class="borda col-2">Área 2</div>
+          <div class="borda col-2">Área 3</div>
+        </div>
+  
+  
+      </div>
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
